@@ -10,6 +10,7 @@ const Banner = () => {
         width={2286.986}
         height={1621.272}
         alt="Banner Logo"
+        priority={true}
         className={`md:h-[53.125rem] h-[50.75rem] absolute  bg-cover  bg-no-repeat flex-shrink-0 bg-banner-gradient`}
       />
       <div
