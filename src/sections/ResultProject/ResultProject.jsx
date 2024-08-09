@@ -27,7 +27,8 @@ const ResultProject = () => {
           width={2286.986}
           height={1621.272}
           alt="Banner Logo"
-          className={`md:w-[82.67325rem] w-[21.79381rem] h-[79.34769rem] md:h-[301rem] md:rounded-[0.625rem] bg-cover flex-shrink-0 relative bg-no-repeat z-0 md:-translate-y-2 ml-[6px]`}
+          priority={true}
+          className={`md:w-[82.67325rem] w-[21.79381rem] h-[79.34769rem] md:h-[301rem] md:rounded-[0.625rem] bg-cover flex-shrink-0 relative bg-no-repeat z-0 md:-translate-y-2`}
         />
       </div>
     </section>
