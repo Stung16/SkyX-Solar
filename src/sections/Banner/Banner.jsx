@@ -1,6 +1,5 @@
 import useWindowSize from "@/hooks/useScreenSize";
 import Image from "next/image";
-import React from "react";
 
 const Banner = () => {
   const { width } = useWindowSize();

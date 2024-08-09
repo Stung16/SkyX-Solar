@@ -3,7 +3,6 @@ import BoxColorBorder from "@/components/BoxColorBorder";
 import IconGuide from "@/components/IconGuide";
 import useWindowSize from "@/hooks/useScreenSize";
 import Image from "next/image";
-import React from "react";
 
 const GuideProject = () => {
   const { width } = useWindowSize();

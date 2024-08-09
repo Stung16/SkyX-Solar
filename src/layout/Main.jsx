@@ -1,5 +1,5 @@
 "use client";
-import React, { Fragment, useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Banner from "@/sections/Banner/Banner";
