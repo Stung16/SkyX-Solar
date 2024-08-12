@@ -11,7 +11,7 @@ const Banner = () => {
         height={1621.272}
         alt="Banner Logo"
         priority={true}
-        className={`md:h-[53.125rem] h-[50.75rem] absolute  bg-cover  bg-no-repeat flex-shrink-0 bg-banner-gradient`}
+        className={`md:h-[53.125rem] h-[50.75rem] w-full absolute  bg-cover  bg-no-repeat flex-shrink-0 bg-banner-gradient`}
       />
       <div
         className="relative grid grid-cols-1 mx-[0.62rem] md:mx-[6.25rem] gap-y-[3.69rem] md:gap-y-[5.25rem]"

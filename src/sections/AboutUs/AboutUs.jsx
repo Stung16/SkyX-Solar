@@ -28,7 +28,7 @@ const AboutUs = () => {
         data-aos-once
         data-aos="fade-up-right"
       >
-        <div className="md:mt-[17.06rem] mt-[7.81rem] max-w-[22.0625rem] md:max-w-[47.8125rem] md:ml-[7.31rem] ml-[0.75rem]">
+        <div className="md:mt-[17.06rem] mt-[7.81rem] max-w-[22.0625rem] md:max-w-[47.8125rem] md:ml-[7.31rem] ml-[0.75rem] ">
           <p className="text-[1.875rem] md:text-[2.5rem] not-italic font-semibold leading-[2.8125rem] tracking-[0.01875rem] text-[#333] relative z-10">
             <span className="text-[#D33]">SkyX Solar</span> là nhà cung cấp giải
             pháp năng lượng phân tán và năng lượng mặt trời áp mái đẳng cấp thế
