@@ -107,7 +107,7 @@ const CircleResearch = ({ setIndexLabel }) => {
         className="flex items-center flex-col space-y-[1.5rem] md:space-y-[1.07rem]"
       >
         <Image
-          src="/images/group1.jpg"
+          src="/images/Group1.jpg"
           width={2286.986}
           height={1621.272}
           alt="Banner Logo"
