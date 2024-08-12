@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import Image from "next/image";
@@ -9,8 +9,7 @@ ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 const CircleResearch = ({ setIndexLabel }) => {
   const [percents, setPercents] = useState([0, 0, 0]);
   const [hasRun, setHasRun] = useState(false); // Để kiểm soát chỉ chạy 1 lần
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
+  const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0,
   });
@@ -28,7 +27,7 @@ const CircleResearch = ({ setIndexLabel }) => {
       },
     ],
   };
-  const handleHover = useCallback((event, chartElement) => {
+  const handleHover = useCallback(( chartElement) => {
     if (chartElement.length) {
       const { index } = chartElement[0];
       setIndexLabel(+index);
@@ -83,36 +82,6 @@ const CircleResearch = ({ setIndexLabel }) => {
       }
     }, intervalTime);
   }
-
-  // useEffect(() => {
-  //   if (inView) {
-  //     const targetValues = [50, 30, 20];
-  //     const duration = 4000; // Tổng thời gian chạy là 4 giây
-  //     const steps = 50; // Số bước nhảy là 50
-  //     const intervalTime = duration / steps; // Thời gian giữa mỗi bước nhảy
-
-  //     let step = 0;
-
-  //     const interval = setInterval(() => {
-  //       step++;
-  //       setPercents([
-  //         Math.min(targetValues[0], step), // Tăng lên đến 50
-  //         Math.min(
-  //           targetValues[1],
-  //           Math.floor((targetValues[1] / targetValues[0]) * step)
-  //         ), // Tăng lên đến 30
-  //         Math.min(
-  //           targetValues[2],
-  //           Math.floor((targetValues[2] / targetValues[0]) * step)
-  //         ), // Tăng lên đến 20
-  //       ]);
-
-  //       if (step >= steps) {
-  //         clearInterval(interval);
-  //       }
-  //     }, intervalTime);
-  //   }
-  // });
   return (
     <div
       style={{
